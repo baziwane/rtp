@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "zNW2wqXltZyPdoudBvRU0+d9kEyuqap5nzz+qUmZ9is=",
+  "Source": "Rtp.Web.Api",
+  "BasePath": "_content/Rtp.Web.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
