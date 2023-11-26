@@ -1,0 +1,20 @@
+using System.Net.Http;
+using Microsoft.AspNetCore.Mvc.Testing;
+using RESTFulSense.Clients;
+
+namespace Rtp.Web.Api.Tests.Acceptance.Brokers
+{
+    public partial class RtpApiBroker
+    {
+        private readonly WebApplicationFactory<Startup> webApplicationFactory;
+        private readonly HttpClient httpClient;
+        private readonly IRESTFulApiFactoryClient apiFactoryClient;
+
+        public RtpApiBroker()
+        {
+            this.webApplicationFactory = new WebApplicationFactory<Startup>();
+            this.httpClient = this.webApplicationFactory.CreateClient();
+            this.apiFactoryClient = new RESTFulApiFactoryClient(this.httpClient);
+        }
+    }
+}
